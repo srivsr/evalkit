@@ -4,7 +4,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from .config import get_settings
 from .database import init_db
-from .routers import evaluate_router, projects_router, health_router
+from .routers import projects_router, health_router
+from .api.v1 import evaluate_router
 
 settings = get_settings()
 

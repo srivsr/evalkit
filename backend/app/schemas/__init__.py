@@ -1,12 +1,10 @@
-from .schemas import (
-    ContextChunk,
-    CanonicalEvaluation,
-    EvaluateRequest,
-    EvaluateResponse,
+from .canonical import ContextChunk, CanonicalEvaluation
+from .requests import EvaluateRequest, BatchEvaluateRequest
+from .responses import (
     MetricsResponse,
+    EvaluateResponse,
+    BatchEvaluateResponse,
     AutofixRecommendationResponse,
     AutofixResponse,
-    BatchEvaluateRequest,
-    BatchEvaluateResponse,
-    AnalyticsResponse,
 )
+from .schemas import AnalyticsResponse

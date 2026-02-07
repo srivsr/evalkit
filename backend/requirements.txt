@@ -12,3 +12,7 @@ httpx==0.26.0
 python-multipart==0.0.6
 gunicorn==21.2.0
 alembic==1.13.1
+pyyaml==6.0.1
+ragas==0.1.0
+deepeval==0.21.0
+datasets==2.16.0

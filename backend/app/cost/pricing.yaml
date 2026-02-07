@@ -1,0 +1,44 @@
+# Pricing version (update when prices change)
+pricing_version: "2026-02-07"
+
+# Model pricing (per million tokens)
+# Source: Official OpenAI/Anthropic pricing pages
+models:
+  # OpenAI
+  gpt-4o:
+    input_per_million: 2.50
+    output_per_million: 10.00
+
+  gpt-4o-mini:
+    input_per_million: 0.15
+    output_per_million: 0.60
+
+  gpt-4-turbo:
+    input_per_million: 10.00
+    output_per_million: 30.00
+
+  # Anthropic
+  claude-sonnet-4-20250514:
+    input_per_million: 3.00
+    output_per_million: 15.00
+
+  claude-haiku-4-20250131:
+    input_per_million: 0.80
+    output_per_million: 4.00
+
+  claude-opus-4-20250131:
+    input_per_million: 15.00
+    output_per_million: 75.00
+
+  # Embedding models
+  text-embedding-3-small:
+    input_per_million: 0.02
+    output_per_million: 0.00
+
+  text-embedding-3-large:
+    input_per_million: 0.13
+    output_per_million: 0.00
+
+  text-embedding-ada-002:
+    input_per_million: 0.10
+    output_per_million: 0.00
