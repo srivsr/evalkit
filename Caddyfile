@@ -1,0 +1,12 @@
+{
+    admin off
+}
+
+:80 {
+    reverse_proxy api:8000
+}
+
+# For production with SSL:
+# api.evalkit.dev {
+#     reverse_proxy api:8000
+# }
