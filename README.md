@@ -194,4 +194,4 @@ See `.env.example` for the full list. Key variables:
 
 ## License
 
-Proprietary. All rights reserved.
+[MIT License](LICENSE)
