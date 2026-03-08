@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evalkit"
+version = "0.1.0"
+description = "QA-Grade RAG Evaluation Platform"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "typer>=0.9.0",
+    "httpx>=0.25.0",
+    "aiosqlite>=0.19.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+    "tenacity>=8.2.0",
+    "pyjwt>=2.8.0",
+    "python-jose[cryptography]>=3.3.0",
+]
+
+[project.optional-dependencies]
+razorpay = ["razorpay>=1.4.0"]
+all = ["razorpay>=1.4.0"]
+[project.scripts]
+evalkit = "evalkit.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["evalkit*"]

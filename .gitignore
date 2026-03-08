@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+evalkit.db
+evalkit.egg-info/
+evalkit/venv/
+evalkit-ui/.next/
+evalkit-ui/node_modules/
+.env
+.env.local
+*.png
+.claude/
